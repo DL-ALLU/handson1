@@ -10,4 +10,7 @@ browser.maximize_window()
 title = browser.title
 print(title)
 time.sleep(2)
+username = browser.find_element(By.ID, "username")
+username.send_keys("student")
+time.sleep(2)
 browser.quit()
