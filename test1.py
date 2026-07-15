@@ -10,4 +10,7 @@ browser.maximize_window()
 title = browser.title
 print(title)
 time.sleep(2)
+password = browser.find_element(By.XPATH, "//*[@id='password']")
+password.send_keys("Password123")
+time.sleep(2)
 browser.quit()
